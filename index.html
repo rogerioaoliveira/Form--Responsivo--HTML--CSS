@@ -1,0 +1,86 @@
+<!-- Esta página foi criada com a finalidade de treino html e css -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- Essa div é para o cabeçalho do formulário -->
+    <div id="div_header" class="center_align">
+        <h1>Este formulário é apenas um treino!</h1>
+        <h3>Servindo apenas para fins de estudo e portifólio.</h3>
+    </div>
+    <!-- Essa div é o próprio formulário em si -->
+    <div id="div_form" class="center_align">
+        <div id="elementos_form">
+            <form>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" placeholder="Digite seu nome completo" style="width: 100%;" required><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" placeholder="Digite seu E-mail" style="width: 100%;" required><br>
+                <label for="idade">Idade</label><br>
+                <input type="number" name="idade" placeholder="Idade" style="width: 100%;" required><br>
+                <label for="ocupacao">Qual é a sua ocupação no momento?</label><br>
+                <select name="ocupacao" id="select_ocupacao" style="width: 100%;" required><br>
+                    <option disabled selected value>Selecione uma opição</option><br>
+                    <option value="Estudante">Estudante</option>
+                    <option value="Trabalha meio periodo">Trabalha meio periodo</option>
+                    <option value="Trabalha integral">Trabalha integral</option>
+                    <option value="Prefere não informar">Prefere não informar</option>
+                    <option value="Outro">Outro</option>
+                </select><br>
+                <label for="indicacao">Você recomendaria esse treino a um amigo?</label><br>
+                <input type="radio" id="sim" name="indicacao" value="Com certeza" class="radio_box" checked>
+                <label for="sim">Com certeza</label><br>
+                <input type="radio" id="talvez" name="indicacao" value="Talvez" class="radio_box">
+                <label for="talvez">Talvez</label><br>
+                <input type="radio" id="nao" name="indicacao" value="Não indicaria" class="radio_box">
+                <label for="nao">Não indicaria</label><br>
+                <select name="preferencia" id="recurso_preferido" style="width: 100%;" required><br>
+                    <option disabled selected value>Selecione uma opição</option>
+                    <option value="Desafios">Desafios</option>
+                    <option value="Projetos">Projetos</option>
+                    <option value="Comunidade">Comunidade</option>
+                    <option value="Open Source">Open Source</option>
+                </select><br>
+                <label for="multiplas_opicoes">O que você gostaria de ver melhorado? <span>(Marque todas as opções
+                        aplicáveis)</span></label><br>
+                <input type="checkbox" id="front" name="front" value="Front-end" class="radio_box">
+                <label for="front">Front-end</label><br>
+                <input type="checkbox" id="back" name="back" value="Back-end" class="radio_box">
+                <label for="back">Back-end</label><br>
+                <input type="checkbox" id="git" name="git" value="Git" class="radio_box">
+                <label for="git">Git</label><br>
+                <input type="checkbox" id="desafios1" name="desafios1" value="Desafios" class="radio_box">
+                <label for="desafios1">Desafios</label><br>
+                <input type="checkbox" id="data" name="data" value="Data Visualization" class="radio_box">
+                <label for="data">Data Visualization</label><br>
+                <input type="checkbox" id="comunidade" name="comunidade" value="Comunidade" class="radio_box">
+                <label for="comunidade">Comunidade</label><br>
+                <input type="checkbox" id="meetups" name="meetups" value="Meetups" class="radio_box">
+                <label for="meetups">Meetups</label><br>
+                <input type="checkbox" id="videos" name="videos" value="Vídeos" class="radio_box">
+                <label for="videos">Vídeos</label><br>
+                <input type="checkbox" id="foruns" name="foruns" value="Foruns" class="radio_box">
+                <label for="foruns">Foruns</label><br>
+                <input type="checkbox" id="open" name="open" value="Open Source" class="radio_box">
+                <label for="open">Open Source</label><br>
+                <input type="checkbox" id="rooms" name="rooms" value="Gitter help rooms" class="radio_box">
+                <label for="rooms">Gitter help rooms</label><br>
+                <label for="sugestao">Deixe aqui suas sugestões:</label><br>
+                <textarea name="sugestao" id="sugestao" placeholder="Deixe sua opinião ou sugestão"
+                    required></textarea><br>
+            </form>
+            <button>Enviar</button>
+        </div>
+    </div>
+</body>
+
+</html>
